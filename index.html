@@ -1,0 +1,41 @@
+<html> 
+  <head> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> 
+  </head> 
+
+  <body onresize="myFunction()" style="overflow: hidden !important;"> 
+    <iframe id="frame_slider" style="height:800px;width:1900px; overflow: hidden !important;">
+    </iframe>
+  </body> 
+  <script>
+    function myFunction() {
+      var w = window.innerWidth;
+      var h = window.innerHeight;
+
+      $("#frame_slider").css("width", w);
+      $("#frame_slider").css("height", h);
+    }
+    function init() {
+      $("#frame_slider").attr('src', 'Slider1/zerocater_slider_first.html');
+      setTimeout(function () {
+        $("#frame_slider").attr('src', 'Slider2/zerocater_slider_second.html');
+      }, 4000);
+      setTimeout(function () {
+        $("#frame_slider").attr('src', 'Slider3/zerocater_slider_third.html');
+      }, 8000)
+      setTimeout(function () {
+        $("#frame_slider").attr('src', 'Slider4/zerocater_slider_fourth.html');
+
+      }, 12000)
+      setTimeout(function () {
+        init();
+        
+      }, 16000)
+      
+    }
+    $(document).ready(function() {
+      init();
+    });
+    
+  </script>
+</html>

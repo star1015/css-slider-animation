@@ -1,0 +1,243 @@
+body {
+    background-color: white;
+}
+/* first */
+.firstdiv {
+    width:160%;
+    height:78.13%;
+    position:relative;
+    margin-left:-60%;
+    cursor:pointer;
+    background: rgba(0,0,0,0);
+    top:0;
+    bottom: 0;
+    -webkit-transform: skew(-9deg);
+    -moz-transform: skew(-9deg);
+    -ms-transform: skew(-9deg);
+    transform: skew(-9deg);
+    overflow: hidden;
+}
+
+.seconddiv {
+    width:100%;
+    height:78.13%;
+    position:relative;
+    margin-left:10px;
+    margin-right: -20%;
+    cursor:pointer;
+    background: rgba(0,0,0,0);
+    top:0;
+    bottom: 0;
+    -webkit-transform: skew(-9deg);
+    -moz-transform: skew(-9deg);
+    -ms-transform: skew(-9deg);
+    transform: skew(-9deg);
+    overflow: hidden;
+}
+
+.restoreimg {
+    -webkit-transform: skew(9deg);
+    -moz-transform: skew(9deg);
+    -ms-transform: skew(9deg);
+    transform: skew(9deg);
+}
+
+.firstimg {
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+      -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+      animation-name: example;
+      animation-duration: 3s;
+}
+ @keyframes example {
+    0% {
+        right: -50%;
+    }
+
+    25% {
+        right: -5%;
+    }
+
+    75% {
+        right: -5%;
+    }
+
+    100% {
+        right: -50%;
+    }
+}
+
+.secondimg {
+    -webkit-animation-name: exampleone; /* Safari 4.0 - 8.0 */
+      -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+      animation-name: exampleone;
+      animation-duration: 3s;
+}
+ @keyframes exampleone {
+    0% {
+        left: -55%;
+    }
+
+    25% {
+        left: -4%;
+    }
+
+    75% {
+        left: -4%;
+    }
+
+    100% {
+        left: -55%;
+    }
+}
+
+
+.thirdimg {
+    -webkit-animation-name: examplethree; /* Safari 4.0 - 8.0 */
+      -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+      animation-name: examplethree;
+      animation-duration: 3s;
+      animation-delay: 0.2s;
+}
+ @keyframes examplethree {
+    0% {
+        right: -50%;
+    }
+
+    25% {
+        right: -5%;
+    }
+
+    75% {
+        right: -5%;
+    }
+
+    100% {
+        right: -50%;
+    }
+}
+
+.fourthimg {
+    -webkit-animation-name: examplefour; /* Safari 4.0 - 8.0 */
+      -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+      animation-name: examplefour;
+      animation-duration: 3s;
+      animation-delay: 0.2s;
+}
+ @keyframes examplefour {
+    0% {
+        left: -62%;
+    }
+
+    25% {
+        left: -7%;
+    }
+
+    75% {
+        left: -7%;
+    }
+
+    100% {
+        left: -62%;
+    }
+}
+
+
+.fifthimg {
+    -webkit-animation-name: examplefive; /* Safari 4.0 - 8.0 */
+      -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+      animation-name: examplefive;
+      animation-duration: 3s;
+      animation-delay: 0.4s;
+}
+ @keyframes examplefive {
+    0% {
+        right: -45%;
+    }
+
+    25% {
+        right: -3%;
+    }
+
+    75% {
+        right: -3%;
+    }
+
+    100% {
+        right: -45%;
+    }
+}
+
+.sixthimg {
+    -webkit-animation-name: examplesix; /* Safari 4.0 - 8.0 */
+      -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+      animation-name: examplesix;
+      animation-duration: 3s;
+      animation-delay: 0.4s;
+}
+ @keyframes examplesix {
+    0% {
+        left: -67%;
+    }
+
+    25% {
+        left: -6%;
+    }
+
+    75% {
+        left: -6%;
+    }
+
+    100% {
+        left: -67%;
+    }
+}
+
+.seventhimg {
+    -webkit-animation-name: exampleseven; /* Safari 4.0 - 8.0 */
+      -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+      animation-name: exampleseven;
+      animation-duration: 3s;
+      animation-delay: 0.6s;
+}
+ @keyframes exampleseven {
+    0% {
+        right: -40%;
+    }
+
+    25% {
+        right: -2.5%;
+    }
+
+    75% {
+        right: -2.5%;
+    }
+
+    100% {
+        right: -40%;
+    }
+}
+
+.eighthimg {
+    -webkit-animation-name: exampleeight; /* Safari 4.0 - 8.0 */
+      -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+      animation-name: exampleeight;
+      animation-duration: 3s;
+      animation-delay: 0.6s;
+}
+ @keyframes exampleeight {
+    0% {
+        left: -74%;
+    }
+
+    25% {
+        left: -8%;
+    }
+
+    75% {
+        left: -8%;
+    }
+
+    100% {
+        left: -74%;
+    }
+}

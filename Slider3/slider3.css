@@ -1,0 +1,187 @@
+body {
+    background-color: white;
+  }
+
+  #slider_1 .rs-handle.rs-move {
+    height: 40px !important;
+    width: 50px !important;
+    margin: -15px -40px -3px -22px !important;
+    transform: rotate(160deg);
+    background: url(./red-face.png) no-repeat !important;
+  }
+
+  #slider_1 .rs-range-color {
+    background-color: #ff2b32 !important;
+  }
+
+  #slider_1 .rs-path-color {
+    background-color: #ebebeb !important;
+  }
+
+  #slider_1 .rs-border,
+  #slider_2 .rs-border,
+  #slider_3 .rs-border {
+    border-width: 0px;
+  }
+
+  #slider_1 .rs-border.rs-outer,
+  #slider_2 .rs-border.rs-outer,
+  #slider_3 .rs-border.rs-outer {
+    border-width: 0px;
+  }
+
+  #slider_1 .rs-border,
+  #slider_2 .rs-border,
+  #slider_3 .rs-border {
+    border: white;
+    outline: unset;
+  }
+
+  #slider_1 .rs-border.rs-outer,
+  #slider_2 .rs-border.rs-outer,
+  #slider_3 .rs-border.rs-outer {
+    border: unset;
+    outline: unset;
+  }
+
+  #slider_1 .rs-range-color {
+    background-color: red !important;
+  }
+
+  #slider_1 .rs-path-color {
+    background-color: #dedede !important;
+  }
+
+  #slider_1 .rs-handle {
+    background-color: #000000;
+  }
+
+  #slider_1 .rs-border {
+    border-color: white !important;
+  }
+
+  #slider_2 .rs-handle.rs-move {
+    height: 40px !important;
+    width: 50px !important;
+    margin: -15px -40px -3px -22px !important;
+    transform: rotate(125deg);
+    border: unset;
+    background: url(./yellow-face.png) no-repeat !important;
+  }
+
+  #slider_2 .rs-range-color {
+    background-color: #ffc741 !important;
+  }
+
+  #slider_2 .rs-path-color {
+    background-color: #ebebeb !important;
+  }
+
+  #slider_3 .rs-handle.rs-move {
+    height: 40px !important;
+    width: 50px !important;
+    margin: -15px -40px -3px -22px !important;
+    transform: rotate(100deg);
+    background: url(./green-face.png) no-repeat !important;
+  }
+
+  #slider_3 .rs-range-color {
+    background-color: #cbe859 !important;
+  }
+
+  #slider_3 .rs-path-color {
+    background-color: #ebebeb !important;
+  }
+
+  .food_view {
+    background: url("./fruit-plate.png") no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    top: 0px;
+    -webkit-animation-name: example;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 3.8s;
+    /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 3.8s;
+    z-index: 9;
+  }
+  /* Standard syntax */
+  @keyframes example {
+    0% {
+      background-color: white;
+      margin-left: 60%;
+      top: 0px;
+    }
+
+    25% {
+      background-color: white;
+      margin-left: 6%;
+      top: 0px;
+    }
+
+    75% {
+      background-color: white;
+      margin-left: 6%;
+      top: 0px;
+    }
+
+    100% {
+      background-color: white;
+      margin-left: 60%;
+      top: 0px;
+    }
+  }
+
+  pie {
+    width: calc(100% - 23px);
+    height: calc(100% - 25px);
+    margin-top: 6px;
+    margin-left: -50%;
+    display: block;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0);
+    border: 10px solid #ebebeb;
+    float: left;
+  }
+  .twentyfive {
+    border: 10px solid #ebebeb;
+    
+    background-image: linear-gradient(90deg, white 50%, transparent 50%),
+      linear-gradient(200deg, #cce859 50%, transparent 50%),
+      linear-gradient(250deg, #ffc741 50%, transparent 50%),
+      linear-gradient(270deg, #ff2b32 50%, transparent 50%);
+  }
+
+  .twentyfive:before {
+    content: "";
+    display: block;
+    margin-left: calc(50% - 5px);
+    margin-top: -15px;
+    height: calc(100% + 40px);
+    width: calc(50% + 20px);
+    border-radius: 0 100% 100% 0 / 50%;
+    background-color: inherit;
+    transform-origin: left;
+
+    transform: rotate(0turn);
+    background-color: white;
+    border: white;
+
+    animation: circledraw 3.75s forwards;
+  }
+
+  @keyframes circledraw {
+    0% {
+      transform: rotate(0turn);
+    }
+    25% {
+      transform: rotate(0.5turn);
+    }
+    75% {
+      transform: rotate(0.5turn);
+    }
+    100% {
+      transform: rotate(0turn);
+    }
+  }

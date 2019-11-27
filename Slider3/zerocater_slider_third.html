@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
+    <title>First Clip</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.roundslider/1.3/roundslider.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/jquery.roundslider/1.3/roundslider.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./slider3.css">
+  </head>
+
+  <body style="margin: 0 !important; overflow: hidden !important;" onresize="myFunction()">
+    <div
+      id="slider_container"
+      style="position: relative;transform: rotateZ(11deg);display: inline-block;"
+    >
+      <!-- <div style="position: absolute; width: 103%; height: 100%;background-color: white; z-index: 99999;"></div> -->
+      <div style="position: absolute;height: 125%; width: 11px; left:65%; background-color: white; z-index: 1000;"></div>
+      <div
+        class="food_view"
+        style="width: 125%;height: 125%;position:absolute;margin-left: 65%;"
+      ></div>
+
+      <div
+        class="food_view_mask"
+        style="width: 125%;height: 125%;left:65%;background-color: white;position:absolute;z-index: 101; overflow: hidden;  border-left: 10px solid white;"
+      >
+        <pie
+          class="twentyfive"
+          style="position: absolute; z-index: -100;"
+        ></pie>
+      </div>
+    </div>
+    <img
+      src="./tag-green.png"
+      class="green"
+      style="position: absolute;width: 100%;height: auto;display: none;"
+    />
+    <img
+      src="./tag-red.png"
+      class="red"
+      style="position: absolute;width: 100%;height: auto;display: none;"
+    />
+    <img
+      src="./tag-yellow.png"
+      class="yellow"
+      style="position: absolute;width: 100%;height: auto;display: none;"
+    />
+    <!-- </div> -->
+  </body>
+  <script src="./slider3.js"></script>
+</html>
