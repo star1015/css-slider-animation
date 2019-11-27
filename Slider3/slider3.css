@@ -109,26 +109,22 @@ body {
   /* Standard syntax */
   @keyframes example {
     0% {
-      background-color: white;
-      margin-left: 60%;
+      margin-left: 100%;
       top: 0px;
     }
 
     25% {
-      background-color: white;
       margin-left: 6%;
       top: 0px;
     }
 
     75% {
-      background-color: white;
       margin-left: 6%;
       top: 0px;
     }
 
     100% {
-      background-color: white;
-      margin-left: 60%;
+      margin-left: 100%;
       top: 0px;
     }
   }
@@ -147,7 +143,7 @@ body {
   .twentyfive {
     border: 10px solid #ebebeb;
     
-    background-image: linear-gradient(90deg, white 50%, transparent 50%),
+    background-image: linear-gradient(90deg, transparent 50%, transparent 50%),
       linear-gradient(200deg, #cce859 50%, transparent 50%),
       linear-gradient(250deg, #ffc741 50%, transparent 50%),
       linear-gradient(270deg, #ff2b32 50%, transparent 50%);

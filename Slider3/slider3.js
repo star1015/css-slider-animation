@@ -14,16 +14,16 @@ function myFunction() {
   function init() {
     $(".green")
       .fadeIn(800)
-      .delay(1200)
-      .fadeOut(800);
+      .delay(1000)
+      .fadeOut(600);
     $(".yellow")
       .delay(500)
       .fadeIn(800)
-      .delay(1400)
-      .fadeOut(800);
+      .delay(1200)
+      .fadeOut(600);
     $(".red")
       .delay(1000)
       .fadeIn(800)
-      .delay(1600)
-      .fadeOut(800);
+      .delay(1000)
+      .fadeOut(600);
   }
