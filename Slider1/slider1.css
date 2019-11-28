@@ -167,35 +167,31 @@ body {
     height: 100%;
     -webkit-animation-name: example;
     /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 3.8s;
+    -webkit-animation-duration: 4s;
     /* Safari 4.0 - 8.0 */
     animation-name: example;
-    animation-duration: 3.8s;
+    animation-duration: 4s;
     z-index: 9;
 }
 /* Standard syntax */
 @keyframes example {
     0% {
-        background-color: white;
-        margin-left: 80%;
+        margin-left: 100%;
         top: 0px;
     }
 
     25% {
-        background-color: white;
-        margin-left: 20%;
+        margin-left: 6%;
         top: 0px;
     }
 
     75% {
-        background-color: white;
-        margin-left: 20%;
+        margin-left: 6%;
         top: 0px;
     }
 
     100% {
-        background-color: white;
-        margin-left: 80%;
+        margin-left: 100%;
         top: 0px;
     }
 }

@@ -1,44 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <meta name="theme-color" content="#000000" />
     <title>First Clip</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.roundslider/1.3/roundslider.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/jquery.roundslider/1.3/roundslider.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./slider1.css">
-</head>
+    <link
+      href="https://cdn.jsdelivr.net/jquery.roundslider/1.3/roundslider.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./slider1.css" />
+  </head>
 
-<body style="margin: 0 !important; overflow: hidden !important;" onresize="myFunction()">
-    <div id="slider_container" style="position: relative;transform: rotateZ(11deg);display: inline-block;">
-        <!-- <div style="position: absolute; width: 103%; height: 100%;background-color: white; z-index: 99999;"></div> -->
-
-        <div id="slider_1" style="position: absolute; z-index: 9999; left:80%; border-left: 10px solid white;">
+  <body
+    style="margin: 0 !important; overflow: hidden !important;"
+    onresize="myFunction()"
+  >
+    <div
+      id="slider_container"
+      style="position: relative;transform: rotateZ(11deg);z-index: 999;"
+    >
+      <div
+        style="position: absolute;width: 65%; height: 125%;overflow: hidden;background-color: white;z-index: 99;"
+      >
+        <div
+          class="food_view"
+          style="width:200%;height: 100%;position:absolute;margin-left: 100%;"
+        ></div>
+      </div>
+      <div
+        style="position: absolute;height: 125%; width: 3%; left:65%; background-color: white; z-index: 1000;"
+      ></div>
+      <div
+        id="slide_1_container"
+        style="position: absolute;width: 125%;height: 125%;left: 3%;"
+      >
+        <div
+          id="slide_1_green"
+          style="position: absolute;width: 100%;height: 100%;left: 0%; top: 0%;"
+        >
+          <div>
+            <img src="./green-face.png" />
+          </div>
+          <canvas
+            data-end="46"
+            data-back-color="#ebebeb"
+            data-fore-color="#cbe859"
+          ></canvas>
         </div>
-        <div id="slider_2" style="position: absolute; z-index: 999; left:80%; border-left: 10px solid white;">
+        <div
+          id="slide_1_yellow"
+          style="position: absolute;width: 84%;height: 84%;left: 8%; top: 8%;"
+        >
+          <canvas
+            data-end="38"
+            data-back-color="#ebebeb"
+            data-fore-color="#ffc741"
+          ></canvas>
+          <div>
+            <img src="./yellow-face.png" />
+          </div>
         </div>
-        <div id="slider_3" style="position: absolute; z-index: 199; left:80%; border-left: 10px solid white;">
+        <div
+          id="slide_1_red"
+          style="position: absolute;width: 68%;height: 68%;left: 16%; top: 16%;"
+        >
+          <canvas
+            data-end="30"
+            data-back-color="#ebebeb"
+            data-fore-color="red"
+          ></canvas>
+          <div>
+            <img src="./red-face.png" />
+          </div>
         </div>
-        <div style="position: absolute;height: 125%; width: 12px; left:80%; background-color: white; z-index: 9000;"></div>
-        <div class="food_view" style="width: 125%;height: 125%;position:absolute;margin-left: 80%;">
-        </div>
-        <div class="food_view_mask"
-            style="width: 125%;height: 125%;left:80%;background-color: white;position:absolute;z-index: 100;">
-        </div>
-
-        <!-- <div style="position: absolute; width: 250px;height: 250px;"></div> -->
+      </div>
+      <!-- <div style="position: absolute; width: 250px;height: 250px;"></div> -->
     </div>
     <!-- <div style="position: relative;margin-left: 30%; -->
     <!-- margin-top: -2%;"> -->
-    <img src="./tag-green.png" class="green" style="position: absolute;width: 100%;height: auto;display: none;">
-    <img src="./tag-red.png" class="red" style="position: absolute;width: 100%;height: auto;display: none;">
-    <img src="./tag-yellow.png" class="yellow" style="position: absolute;width: 100%;height: auto;display: none;">
+    <img
+      src="./tag-green.png"
+      id="green_back"
+      style="position: absolute;width: 100%;height: auto;display: none;"
+    />
+    <img
+      src="./tag-red.png"
+      id="red_back"
+      style="position: absolute;width: 100%;height: auto;display: none;"
+    />
+    <img
+      src="./tag-yellow.png"
+      id="yellow_back"
+      style="position: absolute;width: 100%;height: auto;display: none;"
+    />
     <!-- </div> -->
-
-</body>
-<script src="./slider1.js"></script>
-
+  </body>
+  <script src="./crs.js"></script>
+  <script src="./slider1.js"></script>
 </html>
