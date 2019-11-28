@@ -16,17 +16,20 @@
       $("#frame_slider").css("height", h);
     }
     function init() {
-      $("#frame_slider").attr('src', 'Slider1/zerocater_slider_first.html');
+      
+        $("#frame_slider").attr('src', 'Slider1/zerocater_slider_first.html');
+      
+      
       setTimeout(function () {
         $("#frame_slider").attr('src', 'Slider2/zerocater_slider_second.html');
-      }, 4000);
+      }, 4500);
       setTimeout(function () {
         $("#frame_slider").attr('src', 'Slider3/zerocater_slider_third.html');
-      }, 8000)
+      }, 8500)
       setTimeout(function () {
         $("#frame_slider").attr('src', 'Slider4/zerocater_slider_fourth.html');
 
-      }, 12000)
+      }, 12500)
       setTimeout(function () {
         init();
         
@@ -34,7 +37,9 @@
       
     }
     $(document).ready(function() {
-      init();
+      setTimeout(function () {
+        init();
+      }, 500);
     });
     
   </script>
