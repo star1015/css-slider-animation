@@ -43,6 +43,7 @@ AnimableArc.prototype.onReSize = function(foreSize) {
   this.iconContainer.style.height = this.size / 2 + foreSize / 1 + "px";
   this.iconContainer.style.transformOrigin = "center bottom";
   this.icon.style.width = foreSize * 3 + "px";
+  this.icon.style.display = "block";
   this.icon.style.height = "auto";
   this.icon.style.margin = "auto";
   this.reDraw();
@@ -53,12 +54,17 @@ AnimableArc.prototype.rotateIcon = function(angle) {
   this.iconContainer.style.msTransform = "rotate(" + angle + "rad)";
   this.iconContainer.style.oTransform = "rotate(" + angle + "rad)";
   this.iconContainer.style.transform = "rotate(" + angle + "rad)";
-  this.icon.style.webkitTransform = "rotate(" + -(angle + this.foreLoadingStep) + "rad)";
-  this.icon.style.mozTransform = "rotate(" + -(angle + this.foreLoadingStep) + "rad)";
-  this.icon.style.msTransform = "rotate(" + -(angle + this.foreLoadingStep) + "rad)";
-  this.icon.style.oTransform = "rotate(" + -(angle + this.foreLoadingStep) + "rad)";
-  this.icon.style.transform = "rotate(" + -(angle + this.foreLoadingStep) + "rad)";
-  if(this.foreCurrentAngle > this.startAngle + 0.1) {
+  this.icon.style.webkitTransform =
+    "rotate(" + -(angle + 3 * this.foreLoadingStep) + "rad)";
+  this.icon.style.mozTransform =
+    "rotate(" + -(angle + 3 * this.foreLoadingStep) + "rad)";
+  this.icon.style.msTransform =
+    "rotate(" + -(angle + 3 * this.foreLoadingStep) + "rad)";
+  this.icon.style.oTransform =
+    "rotate(" + -(angle + 3 * this.foreLoadingStep) + "rad)";
+  this.icon.style.transform =
+    "rotate(" + -(angle + 3 * this.foreLoadingStep) + "rad)";
+  if (this.foreCurrentAngle > this.startAngle + 0.1) {
     this.iconContainer.style.display = "block";
   } else {
     this.iconContainer.style.display = "none";
@@ -130,7 +136,7 @@ AnimableArc.prototype.draw = function() {
     context.stroke(fore);
     this.backCurrentAngle = nextBackAngle;
     this.foreCurrentAngle = nextForeAngle;
-    this.rotateIcon(this.foreCurrentAngle + Math.PI / 2 );
+    this.rotateIcon(this.foreCurrentAngle + Math.PI / 2);
     window.requestAnimationFrame(this.draw.bind(this));
   } else {
     const earse = this.earse.bind(this);
