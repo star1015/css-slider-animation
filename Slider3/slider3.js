@@ -13,17 +13,17 @@ function myFunction() {
   });
   function init() {
     $(".green")
-      .fadeIn(800)
-      .delay(1000)
-      .fadeOut(600);
+    .fadeIn(300)
+    .delay(2500)
+    .fadeOut(300);
     $(".yellow")
-      .delay(500)
-      .fadeIn(800)
-      .delay(1200)
-      .fadeOut(600);
+    .delay(300)
+    .fadeIn(300)
+    .delay(2500)
+    .fadeOut(300);
     $(".red")
-      .delay(1000)
-      .fadeIn(800)
-      .delay(1000)
-      .fadeOut(600);
+    .delay(600)
+    .fadeIn(300)
+    .delay(2400)
+    .fadeOut(300);
   }

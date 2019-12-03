@@ -13,8 +13,19 @@ $(document).ready(function () {
 })
 function init() {
 
-    $(".green").fadeIn(800).delay(800).fadeOut(800);
-    $(".yellow").delay(300).fadeIn(800).delay(1000).fadeOut(800);
-    $(".red").delay(800).fadeIn(800).delay(1000).fadeOut(800);
+    $(".green")
+    .fadeIn(300)
+    .delay(2700)
+    .fadeOut(300);
+    $(".yellow")
+    .delay(300)
+    .fadeIn(300)
+    .delay(2700)
+    .fadeOut(300);
+    $(".red")
+    .delay(600)
+    .fadeIn(400)
+    .delay(2600)
+    .fadeOut(400);
 
 }

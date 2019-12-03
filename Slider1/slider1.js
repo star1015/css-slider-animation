@@ -8,8 +8,8 @@ var slide_1_red_container = null,
 function myFunction() {
   var w = window.innerWidth;
   var h = window.innerHeight;
-  $("#slider_container").css("width", w * 73 / 300);
-  $("#slider_container").css("height", w * 73 / 300);
+  $("#slider_container").css("width", (w * 73) / 300);
+  $("#slider_container").css("height", (w * 73) / 300);
   $("#slider_container").css("top", w / 19);
   $("#slider_container").css("left", w / 13);
   if (slide_1_red && slide_1_yellow && slide_1_green) {
@@ -17,25 +17,35 @@ function myFunction() {
     slide_1_yellow.onReSize(w / 150);
     slide_1_green.onReSize(w / 150);
   }
-    document.getElementById("green_back").style.left = w / 4 + "px";
-    document.getElementById("yellow_back").style.left = w / 4 + "px";
-    document.getElementById("red_back").style.left = w / 4 + "px";
-    document.getElementById("green_back").style.top = 0 + "px";
-    document.getElementById("yellow_back").style.top = 0 + "px";
-    document.getElementById("red_back").style.top = 0 + "px";
-    document.getElementById("green_back").style.height = "auto";
-    document.getElementById("yellow_back").style.height = "auto";
-    document.getElementById("red_back").style.height = "auto";
-
+  document.getElementById("green_back").style.left = w / 4 + "px";
+  document.getElementById("yellow_back").style.left = w / 4 + "px";
+  document.getElementById("red_back").style.left = w / 4 + "px";
+  document.getElementById("green_back").style.top = 0 + "px";
+  document.getElementById("yellow_back").style.top = 0 + "px";
+  document.getElementById("red_back").style.top = 0 + "px";
+  document.getElementById("green_back").style.height = "auto";
+  document.getElementById("yellow_back").style.height = "auto";
+  document.getElementById("red_back").style.height = "auto";
 }
 $(document).ready(function() {
   myFunction();
   init();
 });
 function init() {
-  $("#green_back").fadeIn(600).delay(1000).fadeOut(800);
-  $("#yellow_back").delay(300).fadeIn(800).delay(1200).fadeOut(800);
-  $("#red_back").delay(800).fadeIn(800).delay(1400).fadeOut(800);
+  $("#green_back")
+    .fadeIn(300)
+    .delay(2700)
+    .fadeOut(300);
+  $("#yellow_back")
+    .delay(300)
+    .fadeIn(300)
+    .delay(2700)
+    .fadeOut(300);
+  $("#red_back")
+    .delay(600)
+    .fadeIn(400)
+    .delay(2600)
+    .fadeOut(400);
   var w = document.getElementById("slide_1_container").clientWidth;
   var startingAngle = -(Math.PI / 2);
   slide_1_red = new AnimableArc(

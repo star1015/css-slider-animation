@@ -100,10 +100,10 @@ body {
     top: 0px;
     -webkit-animation-name: example;
     /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 3.8s;
+    -webkit-animation-duration: 4s;
     /* Safari 4.0 - 8.0 */
     animation-name: example;
-    animation-duration: 3.8s;
+    animation-duration: 4s;
     z-index: 9;
   }
   /* Standard syntax */
@@ -164,7 +164,7 @@ body {
     background-color: white;
     border: white;
 
-    animation: circledraw 3.75s forwards;
+    animation: circledraw 4s forwards;
   }
 
   @keyframes circledraw {

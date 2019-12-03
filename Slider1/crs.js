@@ -24,11 +24,11 @@ function AnimableArc(containerDiv, startAngle, width) {
   this.foreEndAngle = (canvas.getAttribute("data-end") / 100) * Math.PI * 2;
   this.backCurrentAngle = this.startAngle;
   this.foreCurrentAngle = this.startAngle;
-  this.backLoadingStep = this.backEndAngle / ((200 / 1000) * 60);
-  this.foreLoadingStep = this.foreEndAngle / ((300 / 1000) * 60);
-  this.foreEarsingStep = this.foreEndAngle / ((300 / 1000) * 60);
-  this.backEarsingStep = this.backEndAngle / ((300 / 1000) * 60);
-  this.stopTime = 2100;
+  this.backLoadingStep = this.backEndAngle / ((400 / 1000) * 60);
+  this.foreLoadingStep = this.foreEndAngle / ((600 / 1000) * 60);
+  this.foreEarsingStep = this.foreEndAngle / ((600 / 1000) * 60);
+  this.backEarsingStep = this.backEndAngle / ((400 / 1000) * 60);
+  this.stopTime = 2000;
   this.onReSize(width);
 }
 AnimableArc.prototype.onReSize = function(foreSize) {
@@ -53,7 +53,7 @@ AnimableArc.prototype.rotateIcon = function(angle) {
   this.iconContainer.style.msTransform = "rotate(" + angle + "rad)";
   this.iconContainer.style.oTransform = "rotate(" + angle + "rad)";
   this.iconContainer.style.transform = "rotate(" + angle + "rad)";
-  this.icon.style.webkitTransform = "rotate(" + -angle + "rad)";
+  this.icon.style.webkitTransform = "rotate(" + -(angle + this.foreLoadingStep) + "rad)";
   this.icon.style.mozTransform = "rotate(" + -(angle + this.foreLoadingStep) + "rad)";
   this.icon.style.msTransform = "rotate(" + -(angle + this.foreLoadingStep) + "rad)";
   this.icon.style.oTransform = "rotate(" + -(angle + this.foreLoadingStep) + "rad)";
@@ -134,7 +134,6 @@ AnimableArc.prototype.draw = function() {
     window.requestAnimationFrame(this.draw.bind(this));
   } else {
     const earse = this.earse.bind(this);
-    this.backCurrentAngle -= this.backLoadingStep;
     this.foreCurrentAngle -= this.foreLoadingStep;
     setTimeout(function() {
       window.requestAnimationFrame(earse);

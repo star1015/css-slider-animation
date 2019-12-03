@@ -37,9 +37,9 @@ body {
 
 .firstimg {
     -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
-      -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+      -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
       animation-name: example;
-      animation-duration: 3s;
+      animation-duration: 4s;
 }
  @keyframes example {
     0% {
@@ -61,9 +61,9 @@ body {
 
 .secondimg {
     -webkit-animation-name: exampleone; /* Safari 4.0 - 8.0 */
-      -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+      -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
       animation-name: exampleone;
-      animation-duration: 3s;
+      animation-duration: 4s;
 }
  @keyframes exampleone {
     0% {
@@ -85,10 +85,10 @@ body {
 
 .thirdimg {
     -webkit-animation-name: exampletwo; /* Safari 4.0 - 8.0 */
-      -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+      -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
       animation-name: exampletwo;
       
-      animation-duration: 3s;
+      animation-duration: 4s;
       
 }
  @keyframes exampletwo {
@@ -112,9 +112,9 @@ body {
 
 .fourthimg {
     -webkit-animation-name: examplefour; /* Safari 4.0 - 8.0 */
-      -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+      -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
       animation-name: examplefour;
-      animation-duration: 3s;
+      animation-duration: 4s;
       animation-delay: 0.2s;
 }
 @keyframes examplefour {
@@ -138,9 +138,9 @@ body {
 
 .fifthimg {
     -webkit-animation-name: examplefive; /* Safari 4.0 - 8.0 */
-      -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+      -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
       animation-name: examplefive;
-      animation-duration: 3s;
+      animation-duration: 4s;
       animation-delay: 0.25s;
 }
  @keyframes examplefive {
@@ -163,9 +163,9 @@ body {
 
 .sixthimg {
     -webkit-animation-name: examplesix; /* Safari 4.0 - 8.0 */
-      -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+      -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
       animation-name: examplesix;
-      animation-duration: 3s;
+      animation-duration: 4s;
       animation-delay: 0.2s;
 }
  @keyframes examplesix {
@@ -189,9 +189,9 @@ body {
 
 .seventhimg {
     -webkit-animation-name: exampleseven; /* Safari 4.0 - 8.0 */
-      -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+      -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
       animation-name: exampleseven;
-      animation-duration: 3s;
+      animation-duration: 4s;
       animation-delay: 0.4s;
 }
 @keyframes exampleseven {
@@ -214,9 +214,9 @@ body {
 
 .eighthimg {
     -webkit-animation-name: exampleeight; /* Safari 4.0 - 8.0 */
-      -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+      -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
       animation-name: exampleeight;
-      animation-duration: 3s;
+      animation-duration: 4s;
       animation-delay: 0.4s;
 }
  @keyframes exampleeight {
@@ -239,9 +239,9 @@ body {
 
 .ninthimg {
     -webkit-animation-name: examplenine; /* Safari 4.0 - 8.0 */
-      -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+      -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
       animation-name: examplenine;
-      animation-duration: 3s;
+      animation-duration: 4s;
       animation-delay: 0.4s;
 }
  @keyframes examplenine {

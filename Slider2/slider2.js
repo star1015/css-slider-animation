@@ -11,7 +11,18 @@ $(document).ready(function () {
     init();
 })
 function init() {
-    $(".green").fadeIn(800).delay(800).fadeOut(600);
-    $(".yellow").delay(500).fadeIn(800).delay(1000).fadeOut(400);
-    $(".red").delay(1000).fadeIn(800).delay(1200).fadeOut(200);
+    $(".green")
+    .fadeIn(300)
+    .delay(2700)
+    .fadeOut(300);
+    $(".yellow")
+    .delay(300)
+    .fadeIn(300)
+    .delay(2700)
+    .fadeOut(300);
+    $(".red")
+    .delay(600)
+    .fadeIn(400)
+    .delay(2600)
+    .fadeOut(400);
 }
