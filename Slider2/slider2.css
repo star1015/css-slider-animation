@@ -35,6 +35,13 @@ body {
     overflow: hidden;
 }
 
+.unskew {
+    -webkit-transform: skew(9deg);
+    -moz-transform: skew(9deg);
+    -ms-transform: skew(9deg);
+    transform: skew(9deg);
+}
+
 .firstimg {
     -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
       -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
